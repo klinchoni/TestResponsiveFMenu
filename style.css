@@ -35,6 +35,37 @@ header nav {
     align-items: center;
 }
 
+.floating-menu {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    overflow: hidden; 
+    background-color: #333; 
+}
+
+.floating-menu li {
+    float: left; 
+    margin-right: 20px; 
+    padding: 14px 20px; 
+}
+
+.floating-menu li a {
+    text-decoration: none; 
+    color: white; 
+    display: block; 
+}
+
+.floating-menu li a:hover {
+    background-color: #111; 
+}
+
+
+.floating-menu::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 header nav ul li {
     display: inline-block;
     list-style-type: none;
